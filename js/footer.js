@@ -51,7 +51,6 @@ document.write(`
     </div>
     <div class="footer-bottom">
       <span>© ${new Date().getFullYear()} Ukasi Compassionate Heart Foundation. A journey back to the community.</span>
-      <a href="https://www.ukasicompassionateheart.org:2096/" target="_blank" rel="noopener" style="color:#a4907a">Staff login</a>
     </div>
   </div>
 </footer>

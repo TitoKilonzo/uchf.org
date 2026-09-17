@@ -5,13 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
   var nav = document.querySelector('nav.primary');
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      toggle.classList.toggle('open');
-      nav.classList.toggle('open');
+      var isOpen = toggle.classList.toggle('open');
+      nav.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
     nav.querySelectorAll('a').forEach(function (a) {
       a.addEventListener('click', function () {
         toggle.classList.remove('open');
         nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
       });
     });
   }
