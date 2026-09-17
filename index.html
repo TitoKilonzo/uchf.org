@@ -18,9 +18,16 @@
     </a>
     <nav class="primary" id="primary-navigation">
       <a href="index.html" data-nav="home">Home</a>
-      <a href="about.html" data-nav="about">About Us</a>
+      <div class="nav-drop">
+        <button class="nav-drop-btn" type="button" data-nav="about" aria-haspopup="true" aria-expanded="false">About Us <span class="caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="about.html" data-nav="about">Overview</a>
+          <a href="about.html#board" data-nav="about">Board Members</a>
+        </div>
+      </div>
       <a href="programs.html" data-nav="programs">How We Help</a>
       <a href="stories.html" data-nav="stories">Stories</a>
+      <a href="gallery.html" data-nav="gallery">Gallery</a>
       <a href="donate.html" data-nav="donate">Donate</a>
       <a href="contact.html" data-nav="contact">Contacts</a>
     </nav>
@@ -161,6 +168,32 @@
           <a class="readmore" href="stories.html#story-of-hope-2020">Read more →</a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-deep">
+  <div class="wrap">
+    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;max-width:none">
+      <div>
+        <p class="eyebrow">From the field</p>
+        <h2 class="mt-0">Gallery</h2>
+      </div>
+      <a href="gallery.html" class="btn btn-outline">View full gallery</a>
+    </div>
+    <div class="gallery-grid">
+      <a class="gallery-item" href="gallery.html" style="cursor:pointer">
+        <img src="assets/gallery/gallery-01.jpeg" alt="UCHF community gathering">
+        <span class="cap">Foundation event</span>
+      </a>
+      <a class="gallery-item" href="gallery.html" style="cursor:pointer">
+        <img src="assets/gallery/gallery-03.jpeg" alt="UCHF members handing over school fees">
+        <span class="cap">Fee disbursement</span>
+      </a>
+      <a class="gallery-item" href="gallery.html" style="cursor:pointer">
+        <img src="assets/gallery/gallery-04.jpeg" alt="UCHF member speaking under the foundation's banner">
+        <span class="cap">Community meeting</span>
+      </a>
     </div>
   </div>
 </section>

@@ -18,9 +18,16 @@
     </a>
     <nav class="primary" id="primary-navigation">
       <a href="index.html" data-nav="home">Home</a>
-      <a href="about.html" data-nav="about">About Us</a>
+      <div class="nav-drop">
+        <button class="nav-drop-btn" type="button" data-nav="about" aria-haspopup="true" aria-expanded="false">About Us <span class="caret">▾</span></button>
+        <div class="nav-drop-menu">
+          <a href="about.html" data-nav="about">Overview</a>
+          <a href="about.html#board" data-nav="about">Board Members</a>
+        </div>
+      </div>
       <a href="programs.html" data-nav="programs">How We Help</a>
       <a href="stories.html" data-nav="stories">Stories</a>
+      <a href="gallery.html" data-nav="gallery">Gallery</a>
       <a href="donate.html" data-nav="donate">Donate</a>
       <a href="contact.html" data-nav="contact">Contacts</a>
     </nav>
@@ -92,6 +99,53 @@
   </div>
 </section>
 
+<section id="board" class="bg-deep">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Leadership</p>
+      <h2>Our Board</h2>
+      <p>The volunteers who verify every case, sign off every payment, and keep UCHF accountable to the community it serves.</p>
+    </div>
+    <div class="board-grid">
+      <div class="board-card">
+        <div class="photo"><img src="assets/board/patrick-kitonga.jpeg" alt="Patrick Kitonga"></div>
+        <div class="info">
+          <h3>Patrick Kitonga</h3>
+          <span class="role">Board Chairperson</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="photo"><img src="assets/board/joshua-mutisya.jpeg" alt="Joshua Mutisya"></div>
+        <div class="info">
+          <h3>Joshua Mutisya</h3>
+          <span class="role">Assistant Secretary</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="photo"><img src="assets/board/daniel-musee.jpeg" alt="Dr. Daniel Musee"></div>
+        <div class="info">
+          <h3>Dr. Daniel Musee</h3>
+          <span class="role">Board Member</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="photo"><img src="assets/board/moses-muthui.jpeg" alt="Rev. Moses Muthui"></div>
+        <div class="info">
+          <h3>Rev. Moses Muthui</h3>
+          <span class="role">Board Member</span>
+        </div>
+      </div>
+      <div class="board-card">
+        <div class="photo"><img src="assets/board/nicholas-mutua-muthui.jpeg" alt="Nicholas Mutua Muthui"></div>
+        <div class="info">
+          <h3>Nicholas Mutua Muthui</h3>
+          <span class="role">Board Member</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section>
   <div class="wrap">
     <p class="eyebrow">Frequently asked</p>
@@ -99,7 +153,7 @@
     <div class="accordion">
       <div class="accordion-item">
         <button class="accordion-q"><span>Who runs UCHF day to day?</span><span class="plus">+</span></button>
-        <div class="accordion-a"><p>UCHF is led by community members, including Chairman Patrick Kitonga, alongside volunteers such as Reverend Moses Muthui, who work directly with schools and families to identify students in need and see fee payments through.</p></div>
+        <div class="accordion-a"><p>UCHF is led by a volunteer Board, chaired by Patrick Kitonga, who work directly with schools and families to identify students in need and see fee payments through. See the full <a href="about.html#board">Board of the foundation</a>.</p></div>
       </div>
       <div class="accordion-item">
         <button class="accordion-q"><span>Which students does the foundation support?</span><span class="plus">+</span></button>

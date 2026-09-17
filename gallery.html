@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Donate — Ukasi Compassionate Heart Foundation</title>
-<meta name="description" content="Give to UCHF via M-Pesa Paybill 522522 (Account 7989462) or KCB Bank account 1269123130.">
+<title>Gallery — Ukasi Compassionate Heart Foundation</title>
+<meta name="description" content="Photos from UCHF's community meetings, fee disbursements and foundation events in Ukasi, Mwingi.">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="donate">
+<body data-page="gallery">
 
 <header class="site">
   <div class="nav-inner">
@@ -40,65 +40,55 @@
 
 <section class="page-hero">
   <div class="wrap">
-    <p class="crumb"><a href="index.html">Home</a> / Donations</p>
-    <h1>Give directly. No middlemen.</h1>
-    <p>Every donation goes straight to fee payments and student support — choose M-Pesa or bank transfer below.</p>
+    <p class="crumb"><a href="index.html">Home</a> / Gallery</p>
+    <h1>UCHF, in photos.</h1>
+    <p>Community meetings, fee disbursements and foundation events from Ukasi — click any photo to view it larger.</p>
   </div>
 </section>
 
 <section class="tight">
-  <div class="wrap" style="max-width:640px">
-    <div class="tabs">
-      <button class="tab-btn active" data-tab="tab-mpesa">M-Pesa</button>
-      <button class="tab-btn" data-tab="tab-bank">Bank transfer</button>
+  <div class="wrap">
+    <div class="filter-row" style="align-items:center;justify-content:space-between">
+      <span class="small" style="font-weight:600;color:var(--ink)">Browse by category</span>
+      <div class="select-drop">
+        <select id="gallery-filter" aria-label="Filter gallery by category">
+          <option value="all">All photos</option>
+          <option value="meetings">Community meetings</option>
+          <option value="disbursement">Fee disbursement</option>
+          <option value="events">Foundation events</option>
+        </select>
+      </div>
     </div>
 
-    <div id="tab-mpesa" class="tab-panel active">
-      <p class="small" style="margin-bottom:20px">Give via M-Pesa Paybill — tap the copy icon to grab a number, then complete the payment on your phone.</p>
-      <div class="give-row">
-        <div><span class="lbl">PAYBILL NUMBER</span><span class="val">522522</span></div>
-        <button class="copy-btn" data-copy="522522">Copy</button>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-category="events" data-lightbox="assets/gallery/gallery-01.jpeg" data-caption="A UCHF community gathering at sunset">
+        <img src="assets/gallery/gallery-01.jpeg" alt="UCHF community gathering">
+        <span class="cap">Foundation event</span>
       </div>
-      <div class="give-row">
-        <div><span class="lbl">ACCOUNT NUMBER</span><span class="val">7989462</span></div>
-        <button class="copy-btn" data-copy="7989462">Copy</button>
+      <div class="gallery-item" data-category="meetings" data-lightbox="assets/gallery/gallery-02.jpeg" data-caption="Community members at a UCHF baraza">
+        <img src="assets/gallery/gallery-02.jpeg" alt="Community members seated at a UCHF meeting">
+        <span class="cap">Community meeting</span>
       </div>
-      <p class="small">Questions about your M-Pesa gift? <a href="contact.html" style="color:var(--clay-deep);font-weight:600">Contact us</a> and we'll confirm receipt.</p>
-    </div>
-
-    <div id="tab-bank" class="tab-panel" style="scroll-margin-top:100px">
-      <p class="small" style="margin-bottom:20px">Make a direct deposit through our KCB Bank account. Please use the narration below so we can match your gift correctly.</p>
-      <div class="give-row">
-        <div><span class="lbl">BANK</span><span class="val">KCB Bank</span></div>
+      <div class="gallery-item" data-category="disbursement" data-lightbox="assets/gallery/gallery-03.jpeg" data-caption="Fees being handed over to a beneficiary's family">
+        <img src="assets/gallery/gallery-03.jpeg" alt="UCHF members handing over school fees">
+        <span class="cap">Fee disbursement</span>
       </div>
-      <div class="give-row">
-        <div><span class="lbl">ACCOUNT NUMBER</span><span class="val">1269123130</span></div>
-        <button class="copy-btn" data-copy="1269123130">Copy</button>
+      <div class="gallery-item" data-category="meetings" data-lightbox="assets/gallery/gallery-04.jpeg" data-caption="A member addressing the community under the UCHF banner">
+        <img src="assets/gallery/gallery-04.jpeg" alt="UCHF member speaking under the foundation's banner">
+        <span class="cap">Community meeting</span>
       </div>
-      <div class="give-row">
-        <div><span class="lbl">NARRATION</span><span class="val" style="font-size:1rem">Ukasi Compassionate Heart Foundation</span></div>
-        <button class="copy-btn" data-copy="Ukasi Compassionate Heart Foundation">Copy</button>
+      <div class="gallery-item" data-category="disbursement" data-lightbox="assets/gallery/gallery-05.jpeg" data-caption="Cheques awarded to beneficiaries at a chief's office">
+        <img src="assets/gallery/gallery-05.jpeg" alt="Beneficiaries holding cheques from UCHF">
+        <span class="cap">Fee disbursement</span>
       </div>
-      <p class="small">Questions about your bank transfer? <a href="contact.html" style="color:var(--clay-deep);font-weight:600">Contact us</a> and we'll confirm receipt.</p>
     </div>
   </div>
 </section>
 
-<section class="bg-deep">
-  <div class="wrap two-col">
-    <div>
-      <p class="eyebrow">Where it goes</p>
-      <h2>Straight to school fees.</h2>
-      <p>Gifts through either method fund the same work you can see on our <a href="stories.html" style="color:var(--clay-deep);font-weight:600">Stories page</a> — real fee payments for real students, verified by foundation members before funds move.</p>
-    </div>
-    <img src="https://www.ukasicompassionateheart.org/wp-content/uploads/2025/10/kcb-bank-2.png" alt="KCB Bank" style="max-width:220px;justify-self:start">
-  </div>
-</section>
-
-<section class="center">
+<section class="bg-ink center">
   <div class="wrap" style="max-width:600px">
-    <h2>Prefer to sponsor a specific student?</h2>
-    <p>Reach out and we'll connect you the way Mr. Enoch Nguthu was connected to Mwoki Mutua — one sponsor, one student, one fee balance cleared.</p>
+    <h2>Were you at one of these events?</h2>
+    <p style="color:#cbb595">Send us your photos, or ask about the next community meeting near you.</p>
     <a href="contact.html" class="btn btn-clay">Get in touch</a>
   </div>
 </section>
@@ -106,6 +96,7 @@
 <div id="uchf-footer"></div>
 <script src="js/main.js"></script>
 <script src="js/footer.js"></script>
+<div class="lightbox" id="lightbox"><button class="lightbox-close" aria-label="Close">✕</button><img src="" alt=""></div>
 <div class="toast" id="toast"></div>
 <div class="wa-widget" id="wa-widget">
   <div class="wa-panel" id="wa-panel">

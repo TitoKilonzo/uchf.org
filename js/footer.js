@@ -28,8 +28,10 @@ document.write(`
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
+          <li><a href="about.html#board">Board Members</a></li>
           <li><a href="programs.html">How We Help</a></li>
           <li><a href="stories.html">Stories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
         </ul>
       </div>
       <div>
